@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_App</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+    <!--Main task body starts here-->
+   <section class="main">
+    <!--header section-->
+    <div class="header">
+    <header>
+        <h1> <span> ✓ Ultimate</span> Task App </h1>
+
+        <button class="dark-mode-toggle" id="darkModeToggle"></button>
+        <p>My Ultimate powerhouse guide</p>
+        <div class="container">
+            <div class="container-stats">
+                <div class="content-stats" >
+                    <div>Total</div>
+                    <div id="totalTasks">0</div>
+                </div>
+                <div class="content-stats" >
+                    <div>Completed</div>
+                    <div id="completedTasks">0</div>
+                </div>
+                <div class="content-stats" >
+                    <div>Due Today</div>
+                    <div id="dueToday">0</div>
+                </div>
+                <div class="content-stats" >
+                    <div>Overdue</div>
+                    <div id="overdue">0</div>
+                </div>
+
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar">  </div>    
+                </div>
+            </div>
+  </div>
+    </header>
+    </div>
+    <!--header section ends here-->
+
+    <!--Task to be performed are entered here-->
+    <div class="tasks-container">
+        <div class="task-input-container">
+        <input class="task-input" id="taskInput" placeholder="Add new task...." type="text">
+        <select id="prioritySelect" class="task-input" style="flex: 0.3;">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+        </select >
+        <input type="date" id="dueDate" class="task-input" >
+        <input type="text" id="categoryInput" class="task-input" placeholder="Category" >
+         <button class="btn" id="buttonTask"  >ADD TASK </button>
+        </div>
+   
+
+     <!--filter task to view groupings-->
+     <div class="task-filters" id="task-filters">
+        <button class="filter-btn active" id = "active" data-filter="All">All</button>
+        <button class="filter-btn" id = "task-filter-active-btn" data-filter="active">Active</button>
+        <button class="filter-btn" id = "task-filter-complete-btn" data-filter="completed">Completed</button>
+        <button class="filter-btn" id = "task-filter-today-btn" data-filter="today">Due Today</button>
+        <button class="filter-btn" id = "task-filter-over-btn" data-filter="overdue">Overdue</button>
+        <button class="filter-btn" id = "task-filter-high-btn" data-filter="high">High Priority</button><br>
+        </div>
+        <!--Task logic will be  added here-->
+     <ul class="task-list" id="taskList"  >
+        <div class="empty" >No tasks added yet! Add above to view them here</div>
+
+     <!--javascript code runs here dynamically-->
+    </ul>
+</div>
+   </section>
+   <audio id="completedAudio" src="audio/Wailing_Soul.mp3"></audio>
+   <audio id="addAudio" src="audio/"></audio>
+   <audio id="deleteAudio" src="audio/"></audio>
+   <script src="task.js"></script>
+</body>
+</html>
