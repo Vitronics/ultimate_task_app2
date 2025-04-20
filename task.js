@@ -1,9 +1,9 @@
 
 //DOM 
 const taskInput = document.getElementById('taskInput');
-const prioritySelect = document.getElementById('prioritySelect');
-const dueTask = document.getElementById('dueDate');
-const categoryTask = document.getElementById('categoryInput');
+const priorityTask = document.getElementById('prioritySelect');
+const dueDate = document.getElementById('dueDate');
+const categoryInput = document.getElementById('categoryInput');
 const buttonTask = document.getElementById('buttonTask');
 const taskList = document.getElementById('taskList');
 const filterButtons = document.querySelectorAll('.filter-btn');
@@ -40,8 +40,8 @@ function addTask() {
         text,
         completed: false,
         priority: priorityTask.value,  // Changed from prioritySelect.value
-        dueDate: dueTask.value,        // Changed from dueDate.value
-        category: categoryTask.value.trim() || 'General',  // Changed from categoryInput.value
+        dueDate: dueDate.value,        // Changed from dueDate.value
+        category: categoryInput.value.trim() || 'General',  // Changed from categoryInput.value
         createdAt: new Date().toISOString()
     };
     
@@ -56,13 +56,6 @@ function addTask() {
     categoryTask.value = '';  // Changed from categoryInput.value
     taskInput.focus();
 }
-
-// Dark mode toggle
-darkModeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
-    localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
-});
 
 //filter operations
 function renderTasks(){
