@@ -195,7 +195,7 @@ function deleteTask(e) {
         updateStats();
         deleteAudio.play();
     }
-}
+
 // saveTasks();
 // renderTasks();
 // updateStats();
