@@ -295,7 +295,7 @@ h1 span {
 
 }
 /* Mobile-specific styles */
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     h1 span {
         font-size: 36px;
     }
@@ -341,7 +341,7 @@ h1 span {
 
     .task-actions {
         flex-direction: row;
-        justify-content: flex-end;
+/*         justify-content: flex-end; */
     }
     .task-text {
         flex: 1;
@@ -361,7 +361,7 @@ h1 span {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
     h1 span {
         font-size: 28px;
     }
