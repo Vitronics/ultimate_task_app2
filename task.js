@@ -185,9 +185,9 @@ function deleteTask(e) {
     const taskToDelete = tasks.find(task => task.id === taskId);
     if (!taskToDelete) return; // Task not found
     
-    const confirmation = prompt(`Delete this Task? Please note this action is irreversible.\nTask: "${taskToDelete.text}"`, "Type 'DELETE' to confirm");
+    // const confirmation = prompt(`Delete this Task? Please note this action is irreversible.\nTask: "${taskToDelete.text}"`, "Type 'DELETE' to confirm");
     
-    if (confirmation === 'DELETE') {
+    // if (confirmation === 'DELETE') {
         // Filter out the task to delete
         tasks = tasks.filter(task => task.id !== taskId);
         saveTasks();
