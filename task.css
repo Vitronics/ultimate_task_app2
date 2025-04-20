@@ -196,6 +196,7 @@ h1 span {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     align-items: center;
     gap: 10px;
+    overflow:hidden;
 }
 
 .empty {
@@ -360,7 +361,7 @@ h1 span {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     h1 span {
         font-size: 28px;
     }
