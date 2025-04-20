@@ -1,7 +1,7 @@
 
 //DOM 
 const taskInput = document.getElementById('taskInput');
-const priorityTask = document.getElementById('prioritySelect');
+const prioritySelect = document.getElementById('prioritySelect');
 const dueTask = document.getElementById('dueDate');
 const categoryTask = document.getElementById('categoryInput');
 const buttonTask = document.getElementById('buttonTask');
@@ -40,8 +40,8 @@ function addTask(){
         text,
         completed:false,
         priority:prioritySelect.value,
-        dueDate: dueDate.value,
-        category: categoryInput.value.trim() || 'General',
+        dueDate: dueTask.value,
+        category: categoryTask.value.trim() || 'General',
         createdAt: new Date().toISOString()
     };
     tasks.push(newTask);
@@ -53,7 +53,7 @@ function addTask(){
 
 //reset fields
 taskInput.value = '';
-categoryInput.value = '';
+categoryTask.value = '';
 taskInput.focus();
 };
 
