@@ -389,6 +389,14 @@ h1 span {
 
 }
 
+/*Remove horizontal scroll on mobiles  */
+
+@media (max-width: 767px) {
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
 /* Animations */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-20px); }
