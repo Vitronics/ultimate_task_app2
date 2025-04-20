@@ -52,10 +52,14 @@ function addTask(){
 
 
 //reset fields
+    function resetInputs(){
+        document.getElementById('taskInput');
+        document.getElementById('dueDate');
+        document.getElementById('categoryInput');
 taskInput.value = '';
 dueDate.value = '';
 categoryInput.value = '';
-taskInput.autofocus();
+taskInput.focus();
 };
 
 //filter operations
