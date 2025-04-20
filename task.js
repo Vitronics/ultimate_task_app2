@@ -54,7 +54,7 @@ function addTask(){
 //reset fields
 taskInput.value = '';
 categoryInput.value = '';
-taskInput.autofocus();
+taskInput.focus();
 };
 
 //filter operations
