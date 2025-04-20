@@ -1,10 +1,10 @@
 
 //DOM
 document.addEventListener('DOMContentLoaded', function() {
-const taskInput = document.getElementById('taskInput');
+// const taskInput = document.getElementById('taskInput');
 const priorityTask = document.getElementById('prioritySelect');
 const dueTask = document.getElementById('dueDate');
-const categoryTask = document.getElementById('categoryInput');
+// const categoryTask = document.getElementById('categoryInput');
 const buttonTask = document.getElementById('buttonTask');
 const taskList = document.getElementById('taskList');
 const filterButtons = document.querySelectorAll('.filter-btn');
