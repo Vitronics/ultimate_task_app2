@@ -294,7 +294,7 @@ h1 span {
 
 }
 /* Mobile-specific styles */
-@media (max-width: 600px) {
+@media (max-width: 400px) {
     h1 span {
         font-size: 36px;
     }
