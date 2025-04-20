@@ -189,7 +189,7 @@ h1 span {
 .task-item {
     background: white;
     padding: 15px;
-/*     display: flex; */
+    display: flex; 
     flex-wrap: wrap;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -258,11 +258,10 @@ h1 span {
 }
 .task-due-date {
     font-size: 0.8rem;
-/*     margin-right: 10px; */
+  margin-right: 10px; 
     display: flex;
-    align-items: center;
-/*     
-    white-space: nowrap; */
+    align-items: center;    
+    white-space: nowrap; 
 }
 
 .task-due-date.today {
@@ -273,8 +272,8 @@ h1 span {
 .task-actions {
     display: flex;
     gap: 5px;
-   /* margin-left: auto; */
-    justify-content: flex-end;
+    margin-left: auto; 
+/*     justify-content: flex-end; */
     flex-wrap: wrap;
     
 }
@@ -297,7 +296,7 @@ h1 span {
 /* Mobile-specific styles */
 @media (max-width: 600px) {
     h1 span {
-        font-size: 26px;
+        font-size: 36px;
     }
 
     .header {
@@ -348,6 +347,10 @@ h1 span {
         word-break: break-word;
         overflow-wrap: break-word;
         white-space: normal;
+    }
+
+    .task-due-date{
+        margin-left:0;
     }
     .task-btn {
         padding: 5px 8px;
