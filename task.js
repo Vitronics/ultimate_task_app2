@@ -1,10 +1,9 @@
 
-//DOM
-// document.addEventListener('DOMContentLoaded', function() {
- const taskInput = document.getElementById('taskInput');
+//DOM 
+const taskInput = document.getElementById('taskInput');
 const priorityTask = document.getElementById('prioritySelect');
 const dueTask = document.getElementById('dueDate');
- const categoryTask = document.getElementById('categoryInput');
+const categoryTask = document.getElementById('categoryInput');
 const buttonTask = document.getElementById('buttonTask');
 const taskList = document.getElementById('taskList');
 const filterButtons = document.querySelectorAll('.filter-btn');
@@ -53,19 +52,10 @@ function addTask(){
 
 
 //reset fields
-    // function resetInputs(){
-    //     document.getElementById('taskInput');
-    //     // document.getElementById('dueDate');
-    //     document.getElementById('categoryInput');
-// taskInput.value = '';
-// dueDate.value = '';
-// categoryInput.value = '';
-// taskInput.focus();
-// };
-
 taskInput.value = '';
 categoryInput.value = '';
 taskInput.autofocus();
+};
 
 //filter operations
 function renderTasks(){
@@ -131,6 +121,7 @@ filteredTasks.sort((a,b) => {
 
 // Render tasks
 taskList.innerHTML = filteredTasks.map(task => `
+    
     <li class="task-item ${task.completed ? 'task-completed' : ''}" data-id="${task.id}">
         <input type="checkbox" class="task-checkbox" ${task.completed ? 'checked' : ''}>
         <span class="task-priority priority-${task.priority}">${task.priority}</span>
@@ -149,6 +140,7 @@ taskList.innerHTML = filteredTasks.map(task => `
             <button class="task-btn delete-btn" title="Delete">🗑️</button>
         </div>
     </li>
+    
 `).join('');
 
 // Add event listeners to the new elements
@@ -283,4 +275,3 @@ darkModeToggle.textContent = '';
 
 // Initialize the app
 init();
-
