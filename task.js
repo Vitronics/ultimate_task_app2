@@ -196,11 +196,11 @@ function deleteTask(e) {
         deleteAudio.play();
     }
 }
-saveTasks();
-renderTasks();
-updateStats();
-deleteAudio.play();
-}
+// saveTasks();
+// renderTasks();
+// updateStats();
+// deleteAudio.play();
+// }
 
 // Edit a task
 function editTask(e) {
