@@ -391,17 +391,34 @@ h1 span {
 
 /*Remove horizontal scroll on mobiles  */
 
-@media (max-width: 600px) {
-   html, body {
+/* For screens smaller than 768px (typical mobile devices) */
+@media (max-width: 767px) {
+  /* Prevent horizontal scrolling */
+  body {
     overflow-x: hidden;
+    position: relative;
     width: 100%;
-      margin:0 ;
-  } 
-     .task-list, .task-item {
+  }
+  
+  /* Fix elements that might cause overflow
+  img, iframe, table {
     max-width: 100%;
+    height: auto;
+  } */
+  
+  /* Adjust layout elements */
+  .row, .column {
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  /* Remove horizontal padding/margins if needed */
+  .container {
     padding-left: 15px;
     padding-right: 15px;
   }
+}
 
 /* Animations */
 @keyframes fadeIn {
