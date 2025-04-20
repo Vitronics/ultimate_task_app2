@@ -173,26 +173,26 @@ h1 span {
     font-size: 0.9rem;
 }
 
-.filter-btn.active {
+/* .filter-btn-active.active { 
     background: var(--primary);
-    color: white;
+    color: white;*/
 }
-task-filter-complete-btn .active{
+.task-filter-complete-btn .active{
      background: rgb(24, 233, 24);;
     color: white;
 }
 
-task-filter-today-btn .active{
+.task-filter-today-btn .active{
      background: orange;
     color: white;
 }
 
-task-filter-over-btn .active{
+.task-filter-over-btn .active{
      background: brown;
     color: white;
 }
 
-task-filter-high-btn .active{
+.task-filter-high-btn .active{
      background: red;
     color: white;
 }
