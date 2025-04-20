@@ -176,14 +176,25 @@ if (task.completed) {
 
 // Delete a task
 function deleteTask(e) {
-const taskId = parseInt(e.target.closest('.task-item').dataset.id);
-tasks = tasks.filter(task => task.id !== taskId);
-    const newAlert = prompt('Delete this Task? Please note this actions are Irreversible:', task.text);
-if (newAlert !== null && newAlert.pop() !== '') {
-    task.text = newAlert.pop();
-     // deleteTask();
-    saveTasks();
-    renderTasks();
+    const taskItem = e.target.closest('.task-item');
+    if (!taskItem) return; // Safety check
+    
+    const taskId = parseInt(taskItem.dataset.id);
+    
+    // Find the task to get its text for the prompt
+    const taskToDelete = tasks.find(task => task.id === taskId);
+    if (!taskToDelete) return; // Task not found
+    
+    const confirmation = prompt(`Delete this Task? Please note this action is irreversible.\nTask: "${taskToDelete.text}"`, "Type 'DELETE' to confirm");
+    
+    if (confirmation === 'DELETE') {
+        // Filter out the task to delete
+        tasks = tasks.filter(task => task.id !== taskId);
+        saveTasks();
+        renderTasks();
+        updateStats();
+        deleteAudio.play();
+    }
 }
 saveTasks();
 renderTasks();
