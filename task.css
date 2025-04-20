@@ -400,18 +400,6 @@ h1 span {
     width: 100%;
   }
   
-  /* Fix elements that might cause overflow
-  img, iframe, table {
-    max-width: 100%;
-    height: auto;
-  } */
-  
-  /* Adjust layout elements */
-  .row, .column {
-    flex-wrap: wrap;
-    margin-left: 0;
-    margin-right: 0;
-  }
   
   /* Remove horizontal padding/margins if needed */
   .container {
