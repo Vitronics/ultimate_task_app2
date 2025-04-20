@@ -160,7 +160,7 @@ h1 span {
 }
 
 .filter-btn {
-    background: #eee;
+    background: #fff;
     border-radius: 20px;
     border: none;
     color: black;
@@ -172,7 +172,7 @@ h1 span {
     padding: 0 10px;
     font-size: 0.9rem;
 }
- .filter-btn .active { 
+ .filter-btn.active { 
     background: var(--primary);
     color: white;
 }
