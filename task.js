@@ -53,15 +53,20 @@ function addTask(){
 
 
 //reset fields
-    function resetInputs(){
-        document.getElementById('taskInput');
-        // document.getElementById('dueDate');
-        document.getElementById('categoryInput');
-taskInput.value = '';
+    // function resetInputs(){
+    //     document.getElementById('taskInput');
+    //     // document.getElementById('dueDate');
+    //     document.getElementById('categoryInput');
+// taskInput.value = '';
+// dueDate.value = '';
+// categoryInput.value = '';
+// taskInput.focus();
+// };
+
+    taskInput.value = '';
 dueDate.value = '';
 categoryInput.value = '';
 taskInput.focus();
-};
 
 //filter operations
 function renderTasks(){
