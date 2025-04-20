@@ -1,6 +1,6 @@
 
 //DOM
-document.addEventListener('DOMContentLoaded', function() {
+// document.addEventListener('DOMContentLoaded', function() {
 // const taskInput = document.getElementById('taskInput');
 const priorityTask = document.getElementById('prioritySelect');
 const dueTask = document.getElementById('dueDate');
@@ -281,7 +281,7 @@ if (localStorage.getItem('darkMode') === 'true') {
 document.body.classList.add('dark-mode');
 darkModeToggle.textContent = '';
 }
-}
+
 // Initialize the app
 init();
 
