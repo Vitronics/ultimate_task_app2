@@ -189,7 +189,7 @@ h1 span {
 .task-item {
     background: white;
     padding: 15px;
-    display: flex;
+/*     display: flex; */
     flex-wrap: wrap;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -258,10 +258,11 @@ h1 span {
 }
 .task-due-date {
     font-size: 0.8rem;
-    margin-right: 10px;
+/*     margin-right: 10px; */
     display: flex;
     align-items: center;
-    white-space: nowrap;
+/*     
+    white-space: nowrap; */
 }
 
 .task-due-date.today {
