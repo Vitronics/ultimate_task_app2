@@ -220,7 +220,7 @@ h1 span {
 }
 
 .task-completed .task-text {
-    text-decoration: line-through;
+/*     text-decoration: line-through; */
     color: #07bf41;
 }
 
@@ -258,10 +258,10 @@ h1 span {
 }
 .task-due-date {
     font-size: 0.8rem;
-    margin-right: 10px;
+    margin-right: 30px;
     display: flex;
     align-items: center;
-    white-space: nowrap;
+/*     white-space: nowrap; */
 }
 
 .task-due-date.today {
