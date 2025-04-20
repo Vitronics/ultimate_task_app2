@@ -179,7 +179,7 @@ h1 span {
 }
 
 .task-list {
-    min-width:500px;
+/*     min-width:500px; */
     list-style: none;
     margin: 0;
     padding: 0;
