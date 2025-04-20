@@ -178,6 +178,13 @@ if (task.completed) {
 function deleteTask(e) {
 const taskId = parseInt(e.target.closest('.task-item').dataset.id);
 tasks = tasks.filter(task => task.id !== taskId);
+    const newAlert = prompt('Delete this Task? Please note this actions are Irreversible:', task.text);
+if (newAlert !== null && newAlert.trim() !== '') {
+    task.text = newAlert.trim();
+     deleteTask();
+    saveTasks();
+    renderTasks();
+}
 saveTasks();
 renderTasks();
 updateStats();
