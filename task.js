@@ -53,7 +53,7 @@ function addTask() {
     
     // Reset fields
     taskInput.value = '';
-    categoryTask.value = '';  // Changed from categoryInput.value
+    categoryInput.value = '';  // Changed from categoryInput.value
     taskInput.focus();
 }
 
