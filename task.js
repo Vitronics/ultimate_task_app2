@@ -63,10 +63,9 @@ function addTask(){
 // taskInput.focus();
 // };
 
-    taskInput.value = '';
-dueDate.value = '';
+taskInput.value = '';
 categoryInput.value = '';
-taskInput.focus();
+taskInput.autofocus();
 
 //filter operations
 function renderTasks(){
