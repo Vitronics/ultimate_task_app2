@@ -1,5 +1,6 @@
 
-//DOM 
+//DOM
+document.addEventListener('DOMContentLoaded', function() {
 const taskInput = document.getElementById('taskInput');
 const priorityTask = document.getElementById('prioritySelect');
 const dueTask = document.getElementById('dueDate');
@@ -278,3 +279,4 @@ darkModeToggle.textContent = '';
 
 // Initialize the app
 init();
+}
