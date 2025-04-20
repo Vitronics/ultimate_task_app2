@@ -391,12 +391,12 @@ h1 span {
 
 /*Remove horizontal scroll on mobiles  */
 
-@media (max-width: 767px) {
-/*   html, body {
+@media (max-width: 600px) {
+   html, body {
     overflow-x: hidden;
     width: 100%;
-      margin-right:20px ;
-  } */
+      margin:0 ;
+  } 
      .task-list, .task-item {
     max-width: 100%;
     padding-left: 15px;
