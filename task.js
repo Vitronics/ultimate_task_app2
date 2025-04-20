@@ -31,31 +31,38 @@ dueDate.value = today;
 
  // Add a new task
 
-function addTask(){
+function addTask() {
     const text = taskInput.value.trim();
-    if(!text)
-        return;
+    if (!text) return;
+    
     const newTask = {
         id: Date.now(),
         text,
-        completed:false,
-        priority:prioritySelect.value,
-        dueDate: dueTask.value,
-        category: categoryTask.value.trim() || 'General',
+        completed: false,
+        priority: priorityTask.value,  // Changed from prioritySelect.value
+        dueDate: dueTask.value,        // Changed from dueDate.value
+        category: categoryTask.value.trim() || 'General',  // Changed from categoryInput.value
         createdAt: new Date().toISOString()
     };
+    
     tasks.push(newTask);
     saveTasks();
     renderTasks();
-    updateStats(); 
-    addAudio.onplay(); 
+    updateStats();
+    addAudio.play();  // Fixed from onplay()
+    
+    // Reset fields
+    taskInput.value = '';
+    categoryTask.value = '';  // Changed from categoryInput.value
+    taskInput.focus();
+}
 
-
-//reset fields
-taskInput.value = '';
-categoryTask.value = '';
-taskInput.focus();
-};
+// Dark mode toggle
+darkModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+});
 
 //filter operations
 function renderTasks(){
