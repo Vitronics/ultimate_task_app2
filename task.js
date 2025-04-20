@@ -88,8 +88,8 @@ switch (currentFilter){
                 break;
 
                 case 'high':
-                   // filteredTasks = tasks.filter(task => task.priority === 'high');
-                    filteredTasks = tasks.filter(task => task.priority && !task.completed);
+                    filteredTasks = tasks.filter(task => task.priority === 'high');
+                    // filteredTasks = tasks.filter(task => task.priority && !task.completed);
 
 };
 
