@@ -12,14 +12,15 @@ body {
     transition: all 0.3s;
 }
 
-/* section.main { 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+ section.main { 
+/*     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
     border-radius: 20px;
-    margin: 20px auto;
+/*     margin: 20px auto; */
+     margin: 20px ;
     max-width: 800px;
     padding: 20px;
-    width: 90%;
-}*/
+/*     width: 90%; */
+}
 
 .header {
     background: linear-gradient(135deg, var(--primary), var(--secondary));
