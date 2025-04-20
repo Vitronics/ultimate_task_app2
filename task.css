@@ -180,7 +180,7 @@ h1 span {
     background: rgb(24, 233, 24);
     color: white;
 }
- .#task-filter-today-btn.active { 
+ #task-filter-today-btn.active { 
     background: orange;
     color: white;
 }
