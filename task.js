@@ -53,6 +53,7 @@ function addTask(){
 
 //reset fields
 taskInput.value = '';
+dueDate.value = '';
 categoryInput.value = '';
 taskInput.autofocus();
 };
